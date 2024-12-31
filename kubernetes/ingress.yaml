@@ -3,6 +3,13 @@ kind: Ingress
 metadata:
   name: app-ingress
   namespace: dev
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "30"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "1800"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "1800"
 spec:
   ingressClassName: nginx
   rules:
@@ -12,6 +19,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: hello-world  # Replace with your service name
+            name: hello-world
             port:
-              number: 80  # Replace with your service port
+              number: 80
