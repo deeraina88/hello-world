@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: ecsdemo-nodejs  # Replace with your service name
+            name: hello-world  # Replace with your service name
             port:
               number: 443  # Replace with your service port
