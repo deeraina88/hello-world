@@ -7,6 +7,6 @@ spec:
     app: hello-world
   type: ClusterIP
   ports:
-    - port: 443          # The port that the service will expose for HTTPS
+    - port: 80          # The port that the service will expose for HTTPS
       targetPort: 3000   # The port on the pod that the service will forward to
       protocol: TCP
