@@ -15,4 +15,4 @@ spec:
           service:
             name: ecsdemo-nodejs  # Replace with your service name
             port:
-              number: 3000  # Replace with your service port
+              number: 443  # Replace with your service port
