@@ -21,7 +21,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: 287559100945.dkr.ecr.ap-south-1.amazonaws.com/aimlops-leafguard-app:sample
+      - image: 287559100945.dkr.ecr.ap-south-1.amazonaws.com/aimlops-leafguard-repo:latest
         imagePullPolicy: Always
         name: hello-world
         ports:
